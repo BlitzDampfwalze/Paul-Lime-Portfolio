@@ -23,13 +23,14 @@
 <body>
 	<header role="banner">
 
-		<nav>
-			<h1 class="nav-left nav-item">Paul Lime</h1>
+		<nav id="navbar">
+			<div class="nav-left nav-item"><a href="#top">Paul Lime | Home</a></div>
 			<div class="nav-right">
 				<ul>
-					<li class="nav-item">Bio</li>
-					<li class="nav-item">Projects</li>
-					<li class="nav-item">Contact</li>
+					<li class="nav-item"><a href="#top">Bio</a></li>
+					<li class="nav-item"><a href="#skills">Skills</a></li>
+					<li class="nav-item"><a href="#projects">Projects</a></li>
+					<li class="nav-item"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -37,24 +38,136 @@
 	</header>
 
 	<main role="main" id="main">
+		<h1>Paul Lime's Portfolio</h1>
 
 		<section id="bio">
 			<h2>Bio</h2>
+			<p>
+				Finding his corporate finance day to day job meaningless and mindless, the bordem began to drive Paul mad. He
+				decided to turn his hobby into a passion by immersing himself in the studies of web development. Nothing felt more
+				fulfilling than the constant challenge of solving a new problems regularly. Furthermore, Paul would love to employ
+				his skills in the business world where he can make both a social and financial impact. On a less serious note, Paul
+				also enjoys many other hobbies when he finds any free time in his schedule, such as playing the piano, playing the
+				steirische harmonika, participating in the local community, and engaging in strategic challenges from bored games
+				to business negotations. Community involvement includes helping during the Hurricane Harvey disaster relief and
+				other local non-profit organizations.
+			</p>
+
+		</section>
+
+
+		<section id="skills">
+			<h2>Skills</h2>
+
+			<div>
+				Languages: JavaScript | HTML5 | CSS3
+			</div>
+
+			<div>
+				Front-End: React.js | Redux | | jQuery
+			</div>
+
+			<div>
+				Back-End: Node.js | Express.js | Supertest | RESTful API Endpoints | MongoDB | Mongoose
+			</div>
+
+			<div>
+				Security: bcrypt.js, JWT
+			</div>
 
 		</section>
 
 		<section id="projects">
+
 			<h2>Projects</h2>
-			<img src="assets/plan-it--landing-page.JPG" height="350" width="625" alt="Plan-it landing page">
-			<img src="assets/Recipe-Vault-Home.JPG" height="350" width="625" alt="Recipe Vault landing page">
-			<img src="assets/google-API-landing.jfif" height="350" width="625" alt="Find Places & Things to Do! landing page">
+			<div class="project-divs">
+				<div class="project-card">
+					<h3>Plan-it</h3>
+					<a href="https://plan-it-react-capstone.herokuapp.com/">
+						<img src="assets/plan-it--landing-page.JPG" height="350" width="625" alt="Plan-it landing page">
+					</a>
+
+					<h4></h4>
+					<p class="project-description">
+						This app was built to streamline group travel planning after my own firsthand experience with less than organized
+						individuals. It enables uses to create unique rooms to coordinate the planning of a trip. Tasks can be assigned
+						to the various users that have joined the room and modifty the schedule for all to see as the tasks of
+						researching varioius potential activities actualize into
+						concrete plans.
+					</p>
+					<h4>Technology & Skills</h4>
+					<div>
+						Front-End: React.js | Redux | HTML5 | CSS3 | JavaScript ES6
+					</div>
+					<div>
+						Back-End: Node.js | Express.js | Socket Testing: Mocha | Supertest | RESTful API Endpoints | MongoDB | Mongoose
+					</div>
+					<div>
+						Security: bcrypt.js, JWT
+					</div>
+					<div><a href="https://github.com/BlitzDampfwalze/plan-it-node">Github Repo</a></div>
+				</div>
+
+			</div>
+
+			<div class="project-divs">
+				<div class="project-card">
+					<h3>Recipe Vault</h3>
+					<a href="https://recipe-vault-node-capstone.herokuapp.com/">
+						<img src="assets/Recipe-Vault-Home.JPG" height="350" width="625" alt="Recipe Vault landing page">
+					</a>
+					<h4></h4>
+					<p class="project-description">
+						Despite numerous online recipes and sources, they never seem
+						to quite meet our expectations of our Moms' and Grandmas' recipes. The Recipe
+						Vault was an idea inspired in the aftermath of Hurricane Harvey.
+						Tradition and food was one of the last things on our minds at the time.
+						However, no holiday seems quite the same without those traditional family
+						dishes that have been passed down for generations. With the Recipe Vault, users are able to maintain
+						privacy as well as preserve their families' recipes.
+					</p>
+					<h4>Technology Used</h4>
+					<div>
+						Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery
+					</div>
+					<div>
+						Back-End: Node.js | Express.js | Mocha | Supertest | RESTful API Endpoints | MongoDB | Mongoose
+					</div>
+					<div>
+						Security: bcrypt.js, JWT
+					</div>
+					<div><a href="https://github.com/BlitzDampfwalze/recipe-vault">Github Repo</a></div>
+				</div>
+			</div>
+
+			<div class="project-divs">
+				<div class="project-card">
+					<h3>Find Places & Things to Do! </h3>
+					<a href="https://blitzdampfwalze.github.io/API-Project-Google/">
+						<img src="assets/google-API-landing.jfif" height="350" width="625" alt="Find Places & Things to Do! landing page">
+					</a>
+
+					<h4></h4>
+					<p class="project-description">
+						This app uses Google Places Library APIs and openweathermap.org API to fetch information about places,
+						activities, and other things to do near the user's entered location as well as the current forecast for the
+						area.
+					</p>
+					<h4>Technology Used</h4>
+					<div>
+						Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery
+					</div>
+					<div><a href="https://github.com/BlitzDampfwalze/API-Project-Google">Github Repo</a></div>
+				</div>
+			</div>
+
 		</section>
 
 	</main>
 
 	<footer id="contact" role="contentinfo">
+		<h2 id="contact-heading">Contact</h2>
 		<section>
-			<h2>Contact</h2>
 			<a href="mailto:paullime@gmail.com">Email
 				<!-- <img src="#" alt="Email icon"> -->
 			</a>
@@ -65,7 +178,7 @@
 				<!-- <img src="#" alt="GitHub icon"> -->
 			</a>
 		</section>
-		© Paul Lime - 2019
+		<div id="copyright">© Paul Lime - 2019</div>
 	</footer>
 
 

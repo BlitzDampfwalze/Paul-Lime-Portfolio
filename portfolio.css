@@ -4,14 +4,64 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+a {
+text-decoration: none;
+color: white; 
+}
+
 body {
   font-size: 16px;  
   font-family: 'Lato', sans-serif;
+  background-color: black;
+}
+
+h1 {
+  padding-top: 50px;
+  color: rgba(207, 207, 230, 0.85);
+  font-size:2.25rem;
+  text-align: center;
+  font-style: italic;
+}
+
+section#bio p {
+  text-align: center;
+  color: rgba(207, 207, 230, 0.81);
+  font-size: 1.3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  color:rgba(207, 207, 230, 0.9);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+header {
+  top: 0px;
+  position: sticky !important;
+  z-index: 2;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  z-index: 2;
+  font-weight: bold;
+  background-color: #162749;
 }
 
 nav ul {
@@ -21,11 +71,93 @@ nav ul {
 .nav-item {
   margin: 20px;
 }
+section#bio {
+  margin: 60px auto 60px;
+}
 
-#main, #projects, #bio {
+section#skills div {
+  color:rgba(207, 207, 230, 0.9);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+section#skills {
+  margin: 60px auto 60px;
+  text-align: center;
+}
+
+section#projects {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+section#projects div, section#projects h3  {
+  margin: 15px;
+}
+
+section#projects h3 {
+  padding-top: 30px;
+}
+
+section#projects a {
+  color: inherit;
+}
+
+section#projects .project-cards {
+  margin-bottom: 30px;
+}
+/* #main, #projects, #bio {
   display: flex;
   flex-direction: column;
   align-items: center;
+} */
+
+
+  
+footer {
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 100px;
+  background-color: #162749;
+  color:white;
 }
 
 
+footer section {
+  display: flex;
+  justify-content: center;
+}
+
+footer section a {
+  padding: 15px 105px 50px;
+}
+
+footer h2 {
+  margin-bottom: 50px;
+}
+
+#copyright {
+  padding: 75px 0 50px;
+  /* color: white; */
+}
+
+.project-divs {
+  background-color: rgba(194, 193, 214, 0.8);
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  border-radius: 2.5px;
+  min-width: 900px;
+}
+
+.project-description {
+  padding: 15px 0 15px;
+  width: 625px;
+  justify-content: center;
+  margin: 0 auto;
+}
