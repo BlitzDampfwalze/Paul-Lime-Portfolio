@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+  font-size: 16px;  
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+.nav-item {
+  margin: 20px;
+}
+
+#main, #projects, #bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
