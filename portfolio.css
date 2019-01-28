@@ -3,44 +3,70 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); */
+/* @import url('https://fonts.googleapis.com/css?family=Crete+Round'); */
+
 
 a {
 text-decoration: none;
 color: white; 
 }
 
+.fab {
+  color: white;
+  font-size:2rem;
+}
+
 body {
   font-size: 16px;  
   font-family: 'Lato', sans-serif;
-  background-color: black;
+  color: rgb(62,62,62);
+  background-color: rgb(238, 238, 237);
 }
 
 h1 {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Abril Fatface', cursive;
+  /* font-family: 'Crete Round', serif; */
+/* font-family: 'Patua One'; */
+/* font-family: 'Prompt', sans-serif; */
+  /* font-family: 'Abril Fatface'; */
+  /* font-weight: bold; */
   padding-top: 50px;
-  color: rgba(207, 207, 230, 0.85);
-  font-size:2.25rem;
+  /* color: rgba(207, 207, 230, 0.85); */
+  /* color:	rgb(62,62,62); */
+  font-size:3rem;
   text-align: center;
-  font-style: italic;
+  letter-spacing: 1.25px;
+  /* font-style: italic; */
 }
 
 section#bio p {
   text-align: center;
-  color: rgba(207, 207, 230, 0.81);
-  font-size: 1.3rem;
+  /* color: rgba(207, 207, 230, 0.81); */
+  /* color: #f4f4f4; */
+  /* color: rgb(62,62,62); */
+  font-size: 1.1rem;
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  font-family: 'Abril Fatface';
+  font-size: 2.35rem;
   /* font-weight: bold; */
-  color:rgba(207, 207, 230, 0.9);
+  /* color:rgba(207, 207, 230, 0.9); */
+  /* color: rgb(62,62,62); */
   text-align: center;
   margin-bottom: 20px;
 }
 
 h3 {
+  /* font-family: 'Abril Fatface', cursive; */
   font-size: 2rem;
   font-weight: bold;
 }
@@ -60,6 +86,7 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 2;
+  font-size: 1.1rem;
   font-weight: bold;
   background-color: #162749;
 }
@@ -76,13 +103,16 @@ section#bio {
 }
 
 section#skills div {
-  color:rgba(207, 207, 230, 0.9);
+  /* color:rgba(207, 207, 230, 0.9); */
+  color: black;
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 0.3px;
 }
 
-section#skills {
+#skills {
   margin: 60px auto 60px;
   text-align: center;
 }
@@ -112,13 +142,6 @@ section#projects a {
 section#projects .project-cards {
   margin-bottom: 30px;
 }
-/* #main, #projects, #bio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-
   
 footer {
   text-align: center;
@@ -148,7 +171,10 @@ footer h2 {
 }
 
 .project-divs {
-  background-color: rgba(194, 193, 214, 0.8);
+  /* background-color: rgba(194, 193, 214, 0.8); */
+  background-color: rgb(130, 132, 155);
+  /* background-color: #162749; */
+  color: black;
   padding-bottom: 15px;
   margin-bottom: 50px;
   border-radius: 2.5px;
