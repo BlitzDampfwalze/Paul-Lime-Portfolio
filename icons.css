@@ -1,0 +1,30 @@
+.redux, .react, .js, .node, .css-icon, .html-icon  {
+  width: 50px;
+  /* height: 50px;  */
+}
+
+.html-icon {
+  width: 70px;
+}
+
+.css-icon {
+  height: 58px;
+}
+
+.react {
+  fill:#00D8FF;
+}
+.node-icon {
+  font-size: 4rem;
+  color: rgb(34, 146, 34);
+}
+
+.html-icon {
+  /* font-size: 4rem; */
+  fill: #e54d26;
+}
+
+.css-icon {
+  font-size: 4rem;
+}
+
