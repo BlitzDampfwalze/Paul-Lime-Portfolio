@@ -101,7 +101,7 @@ h1 {
   font-family: 'Lora', serif;
   /* color: rgba(207, 207, 230, 0.85); */
   /* color:	rgb(62,62,62); */
-  font-size: 2.1rem;
+  font-size: 3.5rem;
   text-align: center;
   letter-spacing: 1.25px;
   display: inline-block;
@@ -118,7 +118,7 @@ h1 {
 h2 {
   letter-spacing: 1.5px;
   font-family: 'Lora', serif;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -138,18 +138,20 @@ h4 {
 
 #intro {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 25px auto 70px;
 }
 
 #intro h2 {
-  line-height: 45px;
+  font-size: 2.5rem;
+  line-height: 65px;
+  margin-bottom: 20px;
 }
 
 #intro p {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 1.5;
-  max-width: 60%;
-  margin: 25px auto 0px;
+  max-width: 70%;
+  margin: 15px auto 0px;
   text-align: center;
 }
 
@@ -164,7 +166,9 @@ h4 {
 }
 
 .languages-heading {
+  color: black;
   margin-top:30px;
+  font-size: 1.5rem;
 }
 
 .skill-description-wrapper {
@@ -177,12 +181,16 @@ h4 {
 
 
 .language-list {
+  font-size: 1.18rem;
   display: flex;
   max-width: 50%;
   margin: 0 auto;
 }
 
 .language {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
   padding: 28px;
   flex-basis: 33%;
 }
@@ -375,6 +383,9 @@ footer h2 {
   .language-list {
     max-width: 100%;
   }
+  html {
+    font-size: 16px;   
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -427,6 +438,10 @@ footer h2 {
     text-align: left;
   }
 
+  html {
+    font-size: 12px;   
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -451,6 +466,7 @@ footer h2 {
   .css-icon {
   display: none;
   }
+
 }
 
 @media screen and (max-width: 400px) {
