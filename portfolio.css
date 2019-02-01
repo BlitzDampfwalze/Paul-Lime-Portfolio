@@ -272,9 +272,14 @@ section#projects .project-cards {
 
 .project-description {
   padding: 15px 0 15px;
+  line-height: 1.35rem;
   /* width: 625px; */
   justify-content: center;
   margin: 0 auto;
+}
+
+.technologies-used {
+  line-height: 1.35rem;
 }
 
 .project-divs button {
