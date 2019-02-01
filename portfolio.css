@@ -1,28 +1,35 @@
-* {
-  box-sizing: border-box;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 html {
+  box-sizing: border-box;
   font-size: 16px;  
 }
 
 /* -----------------------------------------
 font-family: 'Black Ops One', cursive;
-font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Lalezar', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Lora', serif;
 ----------------------------------------- */
+
+main {
+  margin-top: 100px;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgb(62,62,62);
+}
 
 a {
 text-decoration: none;
 color: white; 
 }
 
-
-body {
-
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: rgb(62,62,62);
+#intro p a {
+  color: inherit;
 }
 
 .code-symbol {
@@ -31,12 +38,15 @@ body {
 
 header {
   top: 0px;
-  position: sticky !important;
+  position: fixed;
+  width: 100%;
   z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 }
 
 .nav-item {
-  margin: 17px;
+  padding: 20px 15px;
+  height: 100%;
 }
 
 nav {
@@ -52,13 +62,14 @@ nav {
 }
 
 .nav-right {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .name {
   display: flex;
   align-items: center;
 }
+
 #fwd-slash {
   font-size: 1.3rem;
   font-weight: bold;
@@ -68,7 +79,7 @@ nav {
   display: flex;
   align-items: center;
   font-family: 'Lora', serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 nav ul {
@@ -76,33 +87,44 @@ nav ul {
 }
 .rook {
   fill: white;
-  width: 40px;
+  width: 30px;
 }
 .angle-bracket {
   font-size: 2rem;
 }
 
+hr {
+  margin-top: 6px;
+}
+
 h1 {
   font-family: 'Lora', serif;
-  padding-top: 50px;
   /* color: rgba(207, 207, 230, 0.85); */
   /* color:	rgb(62,62,62); */
-  font-size:3rem;
+  font-size:1.8rem;
   text-align: center;
   letter-spacing: 1.25px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
   letter-spacing: 1.5px;
   font-family: 'Lora', serif;
-  font-size: 2.35rem;
+  font-size: 1.65rem;
   text-align: center;
   margin-bottom: 20px;
 }
 
 h3 {
   font-family: 'Lora', serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 h4 {
@@ -110,7 +132,52 @@ h4 {
   font-weight: bold;
 }
 
+#intro {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#skills {
+  border: 2px solid #000;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  padding: 15px;
+}
+
+.languages-heading {
+  margin-top:30px;
+}
+
+.skill-description-wrapper {
+  display: flex;
+}
+
+.skill-list {
+  flex-basis: 33%;
+}
+
+
+.language-list {
+  display: flex;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.language {
+  padding: 28px;
+  flex-basis: 33%;
+}
+
 section#bio {
+  flex-basis:   50%;
   margin: 60px auto 60px;
 }
 
@@ -139,7 +206,12 @@ section#skills div {
 
 #skills {
   margin: 60px auto 60px;
+  max-width: 80%;
   text-align: center;
+}
+
+.projects-wrapper {
+  display: flex;
 }
 
 section#projects {
@@ -182,7 +254,10 @@ footer {
 }
 
 footer section a {
-  padding: 15px 105px 40px;
+  padding: 15px 40px;
+  /* width issue  */
+  /* padding: 15px 105px 40px; */ 
+  
 }
 
 footer h2 {
@@ -193,12 +268,38 @@ footer h2 {
   padding: 35px 0 50px;
 }
 
+.icon-wrapper {
+  display: flex;
+  /* flex-flow: row nowrap; */
+  flex-direction: row;
+  height: 60px;
+}
+.icon-skill {
+  /* grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  grid-column-gap: 10px;
+  grid-row-gap: 15px; */
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin-left: 315px; */
+  flex-basis: 16.67%;
+}
+.skill-description-wrapper {
+  display: flex;
+}
+
+.skill-description {
+  flex-basis: 33%;
+}
+
 .project-divs { 
   background-color: rgb(130, 132, 155);
   color: black;
   padding-bottom: 15px;
   margin-bottom: 50px;
   border-radius: 2.5px;
+  flex-basis: 33%;
   /* min-width: 900px; */
 }
 
@@ -207,6 +308,10 @@ footer h2 {
   /* width: 625px; */
   justify-content: center;
   margin: 0 auto;
+}
+
+#bio {
+  width: 100%;
 }
 
 
@@ -222,14 +327,61 @@ footer h2 {
 
 } */
 
+/* ---------------Responsive Nav Menu CSS--------------- */
+.topnav .nav-menu-icon {
+  display: none;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav .nav-menu-icon {
+  fill: white;
+  display: none;
+}
+/* ----------------------------------------------------- */
+
 @media screen and (max-width: 800px) {
   html {
-    font-size: 14px;  
+    font-size: 14px;   
   }
+  .rook {
+    width: 27px;
+  }
+  .nav-item {
+    margin: 12px;
+}
 }
 
 @media screen and (max-width: 710px) {
-  html {
-    font-size: 12px;  
-  }
+
+.topnav li a {display: none;}
+.topnav a.nav-menu-icon {
+  float: right;
+  display: flex;  
+  padding-right: 12px;
+  padding-top: 10px;
+  font-size: 1.8rem;  
+}
+
+nav ul {
+  display: block;
+  margin-top: 45px;
+}
+
+.topnav.responsive .nav-menu-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
 }

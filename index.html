@@ -21,7 +21,7 @@
 
 <body>
 	<header role="banner">
-		<nav id="navbar">
+		<nav>
 			<div class="nav-left nav-item">
 				<a href="/">
 					<svg class="rook" enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve"
@@ -38,10 +38,14 @@
 					<span id="fwd-slash">&#47;</span>
 					<span class="name angle-bracket">&gt;</span>
 				</a>
+
 			</div>
-			<div class="nav-right">
+			<div class="nav-right topnav" id="navbar">
+				<a href="javascript:void(0);" class="nav-menu-icon" onclick="navbarMenu()">
+					<i class="fas fa-bars"></i>
+				</a>
 				<ul>
-					<li class="nav-item"><a href="#bio">About</a></li>
+					<li class="nav-item"><a href="#bio">Bio</a></li>
 					<li class="nav-item"><a href="#skills">Skills</a></li>
 					<li class="nav-item"><a href="#projects">Projects</a></li>
 					<li class="nav-item"><a href="#contact">Contact</a></li>
@@ -52,38 +56,45 @@
 	</header>
 
 	<main role="main" id="main">
-		<h1>Thank you for visiting my portfolio!</h1>
-		<hr class="heading-underline" />
-		<section id="bio">
-			<h2>About</h2>
+		<div class="heading-wrapper">
+			<h1>Welcome! 
+				<hr class="heading-underline" />
+			</h1>
+		</div>
+
+
+
+		<!-- <div class="section-wrapper"> -->
+		<section id="intro">
+			<h2>
+				Thank you for taking the time to visit my portfolio!
+				<!-- <hr class="heading-underline" /> -->
+			</h2>
 			<p>
-				Finding his corporate finance day to day job meaningless and mindless, the bordem began to drive Paul mad. He
-				decided to turn his hobby into a passion by immersing himself in the studies of web development. Nothing felt more
-				fulfilling than the constant challenge of solving new problems regularly. Furthermore, Paul would love to employ
-				his skills in the business world where he can make both a social and financial impact. On a less serious note, Paul
-				also enjoys many other hobbies when he finds any free time in his schedule, such as playing the piano, playing the
-				steirische harmonika, participating in the local community, and engaging in strategic challenges from board games
-				to business negotations. Community involvement includes helping with Hurricane Harvey disaster relief and
-				other local non-profit organizations.
+				Below you find a list of my skills along with a few projects to demonstrate my ability to build full-stack applications. If you would like to learn more about me please feel free to visit a brief bio by <a href="#bio">clicking here!</a>
 			</p>
 
 		</section>
 
 
 		<section id="skills">
-			<h2>Skills</h2>
-
-			<div>
-				Languages: JavaScript | HTML5 | CSS3
+			<div class="heading-wrapper">
+				<h2>Developer Skills
+					<hr class="heading-underline" />
+				</h2>
 			</div>
 
-			<div>
-				Front-End: React.js | Redux | jQuery
-				<!-- <i class="fab fa-js"></i> -->
-				<!-- <i class="fab fa-node-js"></i> -->
-				<!-- <i class="fab fa-react"></i> -->
 
-				<svg class="html-icon" enable-background="new 0 0 56.693 56.693" id="Layer_1" version="1.1" viewBox="0 -5 56.693 56.693"
+			<div class="icon-wrapper">
+				<svg class="js icon-skill" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 630 630">
+					<g id="js-logo">
+						<rect id="background" x="0" y="0" width="630" height="630" fill="#f7df1e" />
+						<path id="j" d="m 165.65,526.47375 48.2125,-29.1775 C 223.16375,513.7875 231.625,527.74 251.92,527.74 c 19.45375,0 31.71875,-7.60975 31.71875,-37.21 l 0,-201.3 59.20375,0 0,202.1375 c 0,61.32 -35.94375,89.23125 -88.385,89.23125 -47.36125,0 -74.8525,-24.52875 -88.8075,-54.13" />
+						<path id="s" d="m 375,520.13 48.20625,-27.91125 c 12.69,20.72375 29.1825,35.9475 58.36125,35.9475 24.53125,0 40.17375,-12.26475 40.17375,-29.18125 0,-20.29875 -16.06875,-27.48875 -43.135,-39.32625 l -14.7975,-6.3475 c -42.715,-18.18125 -71.05,-41.0175 -71.05,-89.2275 0,-44.40375 33.83125,-78.2375 86.695,-78.2375 37.6375,0 64.7025,13.11125 84.15375,47.36625 l -46.09625,29.60125 c -10.15,-18.1825 -21.1425,-25.37125 -38.0575,-25.37125 -17.33875,0 -28.335,10.995 -28.335,25.37125 0,17.7625 10.99625,24.9525 36.3675,35.94875 l 14.8,6.3425 c 50.325,21.56875 78.66,43.5575 78.66,93.03375 0,53.2875 -41.86625,82.465 -98.11,82.465 -54.97625,0 -90.5,-26.2175 -107.83625,-60.47375" />
+					</g>
+				</svg>
+
+				<svg class="html-icon icon-skill" enable-background="new 0 0 56.693 56.693" id="Layer_1" version="1.1" viewBox="0 1.5 56.693 56.693"
 				 xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<g>
 						<polygon enable-background="new    " points="16.356,9.799 18.382,9.799 18.382,12.018 20.598,12.018 20.598,5.391 18.382,5.391    18.382,7.581 16.356,7.581 16.356,5.391 14.141,5.391 14.141,12.018 16.356,12.018  " />
@@ -95,24 +106,10 @@
 					</g>
 				</svg>
 
-				<!-- <i class="fab fa-html5 html-icon"></i> -->
-				<!-- <i class="fab fa-css3 css-icon"></i> -->
-				<!-- <svg class="css-icon" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
-				 xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<g id="XMLID_3872_">
-						<polygon id="XMLID_3929_" points="339.7,6 339.7,112.8 448.3,112.8  " />
-						<path d="M367.6,338.6L367.6,338.6c0-49.1-39.8-88.9-88.9-88.9h-215v177.8h215   C327.8,427.5,367.6,387.7,367.6,338.6z M112.7,368.2c3.5,4.7,8.3,7.1,14.4,7.1c6,0,10.5-1.6,13.6-4.7c3.1-3.1,4.7-7.6,4.7-13.5   h14.1l0.1,0.4c0.2,8.8-2.7,15.9-8.6,21.4c-5.9,5.4-13.8,8.1-23.9,8.1c-10.2,0-18.4-3.4-24.8-10.3c-6.3-6.9-9.5-15.7-9.5-26.3v-16.6   c0-10.7,3.1-19.4,9.4-26.3c6.2-6.9,14.4-10.4,24.5-10.4c10.3,0,18.4,2.6,24.3,7.9c5.9,5.2,8.8,12.4,8.6,21.6l-0.1,0.4h-14.1   c0-5.8-1.6-10.3-4.7-13.4c-3.2-3.1-7.8-4.7-13.9-4.7c-5.9,0-10.6,2.4-14.1,7.1c-3.5,4.7-5.2,10.6-5.2,17.8v16.8   C107.4,357.5,109.1,363.5,112.7,368.2z M225.7,380.4c-5.7,4.3-13.2,6.5-22.4,6.5c-8.9,0-16.6-2.4-23.3-7.1   c-6.6-4.7-9.8-11.4-9.6-20l0.1-0.4h14.1c0,5.2,1.8,9.2,5.4,11.9c3.6,2.7,8,4,13.2,4c5.2,0,9.2-1.1,12-3.3c2.9-2.2,4.3-5.1,4.3-8.9   c0-3.6-1.3-6.6-3.9-9c-2.6-2.3-7.2-4.4-13.7-6.2c-9.4-2.6-16.7-6-21.8-10.2c-5.1-4.2-7.7-9.7-7.7-16.6c0-7,2.8-12.9,8.4-17.4   c5.6-4.6,12.8-6.8,21.6-6.8c9.5,0,17,2.5,22.7,7.6c5.7,5.1,8.4,11.3,8.2,18.8l-0.1,0.4h-14.1c0-4.6-1.5-8.3-4.6-11   c-3.1-2.7-7.1-4.1-12.2-4.1c-4.9,0-8.7,1.2-11.4,3.5c-2.7,2.3-4,5.3-4,9c0,3.4,1.5,6.1,4.4,8.3c2.9,2.2,7.8,4.3,14.5,6.2   c9.2,2.6,16.2,6.1,21,10.5c4.8,4.4,7.2,10.1,7.2,17C234.3,370.3,231.4,376.1,225.7,380.4z M246.1,359.8l0.1-0.4h14.1   c0,5.2,1.8,9.2,5.4,11.9c3.6,2.7,8,4,13.2,4c5.2,0,9.2-1.1,12-3.3c2.9-2.2,4.3-5.1,4.3-8.9c0-3.6-1.3-6.6-3.9-9   c-2.6-2.3-7.2-4.4-13.7-6.2c-9.4-2.6-16.7-6-21.8-10.2c-5.1-4.2-7.7-9.7-7.7-16.6c0-7,2.8-12.9,8.4-17.4c5.6-4.6,12.8-6.8,21.6-6.8   c9.5,0,17,2.5,22.7,7.6c5.7,5.1,8.4,11.3,8.2,18.8l-0.1,0.4H295c0-4.6-1.5-8.3-4.6-11c-3.1-2.7-7.1-4.1-12.2-4.1   c-4.9,0-8.7,1.2-11.4,3.5c-2.7,2.3-4,5.3-4,9c0,3.4,1.5,6.1,4.4,8.3c2.9,2.2,7.8,4.3,14.5,6.2c9.2,2.6,16.2,6.1,21,10.5   c4.8,4.4,7.2,10.1,7.2,17c0,7.3-2.8,13-8.5,17.4c-5.7,4.3-13.2,6.5-22.4,6.5c-8.9,0-16.6-2.4-23.3-7.1   C249.1,375.1,245.9,368.4,246.1,359.8z"
-						 id="XMLID_4353_" />
-						<path d="M327.7,6.3H81v231.3h197.7c55.6,0,100.9,45.3,100.9,100.9s-45.3,100.9-100.9,100.9H81V506h366.7   l0.6-381.2H327.7V6.3z"
-						 id="XMLID_4373_" />
-					</g>
-				</svg> -->
-
-
-				<svg class="css-icon" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+				<svg class="css-icon icon-skill" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
 				 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
 				 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-				 viewBox="0 0 362.73401 511.99998" id="svg3476" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="CSS3.svg">
+				 viewBox="-50 0 362.73401 511.99998" id="svg3476" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="CSS3.svg">
 					<defs id="defs3478" />
 					<sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0"
 					 inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="181.367" inkscape:cy="256" inkscape:document-units="px"
@@ -148,43 +145,10 @@
 					</g>
 				</svg>
 
-				<i class="fab fa-node node-icon"></i>
+				<i class="fab fa-node node-icon icon-skill"></i>
 
-				<svg class="node" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-				 xmlns:xlink="http://www.w3.org/1999/xlink">
-					<circle cx="256" cy="256" fill="#6CC24A" id="ellipse" r="256" />
-					<g id="logo">
-						<path d="M135.2,259.1c0-1.1-0.6-2-1.5-2.5l-24.2-13.9c-0.4-0.2-0.9-0.4-1.3-0.4c0,0-0.2,0-0.3,0   c-0.5,0-0.9,0.1-1.3,0.4l-24.2,13.9c-0.9,0.5-1.5,1.5-1.5,2.5l0.1,37.4c0,0.5,0.3,1,0.7,1.3c0.4,0.3,1,0.3,1.4,0l14.4-8.2   c0.9-0.5,1.5-1.5,1.5-2.5v-17.5c0-1,0.6-2,1.5-2.5l6.1-3.5c0.5-0.3,1-0.4,1.5-0.4c0.5,0,1,0.1,1.5,0.4l6.1,3.5   c0.9,0.5,1.5,1.5,1.5,2.5V287c0,1,0.6,2,1.5,2.5l14.4,8.2c0.4,0.3,1,0.3,1.5,0c0.4-0.3,0.7-0.7,0.7-1.3L135.2,259.1z"
-						 fill="#FFFFFF" />
-						<path d="M264.2,207.6c-0.5-0.3-1-0.2-1.5,0c-0.4,0.3-0.7,0.7-0.7,1.3v37.1c0,0.4-0.2,0.7-0.5,0.9   c-0.3,0.2-0.7,0.2-1,0l-6.1-3.5c-0.9-0.5-2-0.5-2.9,0l-24.2,14c-0.9,0.5-1.5,1.5-1.5,2.5v27.9c0,1,0.6,2,1.5,2.5l24.2,14   c0.9,0.5,2,0.5,2.9,0l24.2-14c0.9-0.5,1.5-1.5,1.5-2.5v-69.6c0-1.1-0.6-2-1.5-2.5L264.2,207.6z M262,278.6c0,0.3-0.1,0.5-0.4,0.6   l-8.3,4.8c-0.2,0.1-0.5,0.1-0.7,0l-8.3-4.8c-0.2-0.1-0.4-0.4-0.4-0.6V269c0-0.3,0.1-0.5,0.4-0.6l8.3-4.8c0.2-0.1,0.5-0.1,0.7,0   l8.3,4.8c0.2,0.1,0.4,0.4,0.4,0.6L262,278.6L262,278.6z"
-						 fill="#FFFFFF" />
-						<path d="M350.7,268.7c0.9-0.5,1.5-1.5,1.5-2.5v-6.8c0-1-0.6-2-1.5-2.5l-24-13.9c-0.9-0.5-2-0.5-2.9,0l-24.2,14   c-0.9,0.5-1.5,1.5-1.5,2.5v27.9c0,1,0.6,2,1.5,2.5l24,13.7c0.9,0.5,2,0.5,2.9,0l14.5-8.1c0.5-0.3,0.7-0.7,0.8-1.3   c0-0.5-0.3-1-0.7-1.3l-24.3-14c-0.5-0.3-0.7-0.7-0.7-1.3V269c0-0.5,0.3-1,0.7-1.3l7.6-4.4c0.4-0.3,1-0.3,1.5,0l7.6,4.4   c0.5,0.3,0.7,0.7,0.7,1.3v6.9c0,0.5,0.3,1,0.7,1.3c0.5,0.3,1,0.3,1.5,0L350.7,268.7z"
-						 fill="#FFFFFF" />
-						<path d="M179.1,242.8c0.9-0.5,2-0.5,2.9,0l24.2,13.9c0.9,0.5,1.5,1.5,1.5,2.5v27.9c0,1-0.6,2-1.5,2.5l-24.2,14   c-0.9,0.5-2,0.5-2.9,0l-24.2-14c-0.9-0.5-1.5-1.5-1.5-2.5v-27.9c0-1,0.6-2,1.5-2.5L179.1,242.8z"
-						 fill="#FFFFFF" />
-						<path d="M397.6,304.1c-0.8,0-1.7-0.2-2.4-0.6l-7.6-4.5c-1.1-0.6-0.6-0.9-0.2-1c1.5-0.5,1.8-0.6,3.4-1.6   c0.2-0.1,0.4-0.1,0.6,0l5.8,3.5c0.2,0.1,0.5,0.1,0.7,0l22.8-13.2c0.2-0.1,0.3-0.4,0.3-0.6v-26.3c0-0.3-0.1-0.5-0.4-0.6L398,246.1   c-0.2-0.1-0.5-0.1-0.7,0l-22.8,13.1c-0.2,0.1-0.4,0.4-0.4,0.6v26.3c0,0.3,0.1,0.5,0.4,0.6l6.2,3.6c3.4,1.7,5.5-0.3,5.5-2.3v-26   c0-0.4,0.3-0.7,0.7-0.7h2.9c0.4,0,0.7,0.3,0.7,0.7v26c0,4.5-2.5,7.1-6.7,7.1c-1.3,0-2.4,0-5.3-1.4l-6-3.4c-1.5-0.9-2.4-2.4-2.4-4.2   v-26.3c0-1.7,0.9-3.3,2.4-4.2l22.8-13.2c1.4-0.8,3.4-0.8,4.8,0l22.8,13.2c1.5,0.9,2.4,2.4,2.4,4.2v26.3c0,1.7-0.9,3.3-2.4,4.2   L400,303.5C399.3,303.9,398.5,304.1,397.6,304.1z"
-						 fill="#FFFFFF" />
-						<path d="M404.7,286c-10,0-12.1-4.6-12.1-8.4c0-0.4,0.3-0.7,0.7-0.7h2.9c0.3,0,0.6,0.2,0.7,0.6   c0.4,3,1.8,4.5,7.8,4.5c4.8,0,6.8-1.1,6.8-3.6c0-1.5-0.6-2.6-8-3.3c-6.2-0.6-10.1-2-10.1-7c0-4.6,3.9-7.3,10.4-7.3   c7.3,0,10.9,2.5,11.4,8c0,0.2,0,0.4-0.2,0.5c-0.1,0.1-0.3,0.2-0.5,0.2h-3c-0.3,0-0.6-0.2-0.6-0.5c-0.7-3.2-2.4-4.2-7.1-4.2   c-5.2,0-5.9,1.8-5.9,3.2c0,1.7,0.7,2.1,7.8,3.1c7,0.9,10.3,2.2,10.3,7.2C416,283.1,411.9,286,404.7,286z"
-						 fill="#FFFFFF" />
-						<path d="M324.9,267.4c0.2-0.1,0.4-0.1,0.6,0l4.6,2.7c0.2,0.1,0.3,0.3,0.3,0.5v5.4c0,0.2-0.1,0.4-0.3,0.5l-4.6,2.7   c-0.2,0.1-0.4,0.1-0.6,0l-4.6-2.7c-0.2-0.1-0.3-0.3-0.3-0.5v-5.4c0-0.2,0.1-0.4,0.3-0.5L324.9,267.4z"
-						 fill="#FFFFFF" />
-						<g>
-							<path d="M441,249.6c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4c0-2.5,2-4.4,4.4-4.4C439,245.2,441,247.2,441,249.6z     M432.9,249.6c0,2,1.7,3.7,3.7,3.7c2,0,3.7-1.7,3.7-3.7c0-2-1.7-3.7-3.7-3.7C434.6,246,432.9,247.6,432.9,249.6z M435,247.2h1.7    c0.6,0,1.7,0,1.7,1.3c0,0.9-0.6,1.1-0.9,1.2c0.7,0,0.7,0.5,0.8,1.1c0,0.4,0.1,1.1,0.3,1.3h-1c0-0.2-0.2-1.5-0.2-1.6    c-0.1-0.3-0.2-0.4-0.5-0.4h-0.9v2h-1L435,247.2L435,247.2z M435.9,249.3h0.8c0.6,0,0.7-0.4,0.7-0.7c0-0.7-0.5-0.7-0.7-0.7h-0.8    L435.9,249.3C435.9,249.3,435.9,249.3,435.9,249.3z"
-							 fill="#FFFFFF" />
-						</g>
-					</g>
-				</svg>
-
-				<svg class="js" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 630 630">
-					<g id="js-logo">
-						<rect id="background" x="0" y="0" width="630" height="630" fill="#f7df1e" />
-						<path id="j" d="m 165.65,526.47375 48.2125,-29.1775 C 223.16375,513.7875 231.625,527.74 251.92,527.74 c 19.45375,0 31.71875,-7.60975 31.71875,-37.21 l 0,-201.3 59.20375,0 0,202.1375 c 0,61.32 -35.94375,89.23125 -88.385,89.23125 -47.36125,0 -74.8525,-24.52875 -88.8075,-54.13" />
-						<path id="s" d="m 375,520.13 48.20625,-27.91125 c 12.69,20.72375 29.1825,35.9475 58.36125,35.9475 24.53125,0 40.17375,-12.26475 40.17375,-29.18125 0,-20.29875 -16.06875,-27.48875 -43.135,-39.32625 l -14.7975,-6.3475 c -42.715,-18.18125 -71.05,-41.0175 -71.05,-89.2275 0,-44.40375 33.83125,-78.2375 86.695,-78.2375 37.6375,0 64.7025,13.11125 84.15375,47.36625 l -46.09625,29.60125 c -10.15,-18.1825 -21.1425,-25.37125 -38.0575,-25.37125 -17.33875,0 -28.335,10.995 -28.335,25.37125 0,17.7625 10.99625,24.9525 36.3675,35.94875 l 14.8,6.3425 c 50.325,21.56875 78.66,43.5575 78.66,93.03375 0,53.2875 -41.86625,82.465 -98.11,82.465 -54.97625,0 -90.5,-26.2175 -107.83625,-60.47375" />
-					</g>
-				</svg>
-
-				<svg class="react" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_2" style="enable-background:new 0 0 600 600;"
-				 version="1.1" viewBox="0 0 600 600" xml:space="preserve">
+				<svg class="react icon-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_2"
+				 style="enable-background:new 0 0 600 600;" version="1.1" viewBox="0 0 600 600" xml:space="preserve">
 					<style type="text/css">
 					</style>
 					<circle class="st0" cx="299.5" cy="299.6" r="50.2" />
@@ -199,7 +163,7 @@
 					</g>
 				</svg>
 
-				<svg class="redux" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+				<svg class="redux icon-skill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
 					<g fill="#764ABC">
 						<path d="M65.6 65.4c2.9-.3 5.1-2.8 5-5.8-.1-3-2.6-5.4-5.6-5.4h-.2c-3.1.1-5.5 2.7-5.4 5.8.1 1.5.7 2.8 1.6 3.7-3.4 6.7-8.6 11.6-16.4 15.7-5.3 2.8-10.8 3.8-16.3 3.1-4.5-.6-8-2.6-10.2-5.9-3.2-4.9-3.5-10.2-.8-15.5 1.9-3.8 4.9-6.6 6.8-8-.4-1.3-1-3.5-1.3-5.1-14.5 10.5-13 24.7-8.6 31.4 3.3 5 10 8.1 17.4 8.1 2 0 4-.2 6-.7 12.8-2.5 22.5-10.1 28-21.4z" />
 						<path d="M83.2 53c-7.6-8.9-18.8-13.8-31.6-13.8H50c-.9-1.8-2.8-3-4.9-3h-.2c-3.1.1-5.5 2.7-5.4 5.8.1 3 2.6 5.4 5.6 5.4h.2c2.2-.1 4.1-1.5 4.9-3.4H52c7.6 0 14.8 2.2 21.3 6.5 5 3.3 8.6 7.6 10.6 12.8 1.7 4.2 1.6 8.3-.2 11.8-2.8 5.3-7.5 8.2-13.7 8.2-4 0-7.8-1.2-9.8-2.1-1.1 1-3.1 2.6-4.5 3.6 4.3 2 8.7 3.1 12.9 3.1 9.6 0 16.7-5.3 19.4-10.6 2.9-5.8 2.7-15.8-4.8-24.3z" />
@@ -208,102 +172,159 @@
 				</svg>
 
 			</div>
+			<!-- <div class="skill-description-wrapper">
+					<div class="skill-description">JavaScript</div>
+					|
+					<div class="skill-description">HTML5</div>
+					|
+					<div class="skill-description">CSS3</div>
+				</div> -->
+			<h3 class="languages-heading">Languages:</h3>
+			<ul class="language-list">
+				<li class="language">JavaScript</li>
+				<li class="language">HTML5</li>
+				<li class="language">CSS3</li>
+			</ul>
+			<div class="skill-description-wrapper">
 
-			<div>
-				Back-End: Node.js | Express.js | Supertest | RESTful API Endpoints | MongoDB | Mongoose
-			</div>
 
-			<div>
-				Security: bcrypt.js, JWT
+				<ul class="skill-list">
+					<h3>Back-End:</h3>
+					<li>Node</li>
+					<li>Express</li>
+					<li>MongoDB</li>
+					<li>Mongoose</li>
+					<li>RESTful API Endpoints</li>
+				</ul>
+
+				<ul class="skill-list">
+					<h3>Front-End:</h3>
+					<li>React</li>
+					<li>Redux</li>
+					<li>jQuery</li>
+				</ul>
+
+				<ul class="skill-list">
+					<h3>Other:</h3>
+					<li>bcrypt</li>
+					<li>JWT</li>
+					<li>Supertest</li>
+					<li>Mocha/Chai</li>
+					<li>Enzyme</li>
+					<li>Heroku</li>
+				</ul>
 			</div>
 
 		</section>
+		<!-- </div> -->
+
+
 
 		<section id="projects">
 
 			<h2>Projects</h2>
-			<div class="project-divs">
-				<div class="project-card">
-					<h3>Plan-it</h3>
-					<a href="https://plan-it-react-capstone.herokuapp.com/">
-						<!-- <img src="assets/plan-it--landing-page.JPG" height="350" width="625" alt="Plan-it landing page"> -->
-					</a>
+			<div class="projects-wrapper">
+				<div class="project-divs">
+					<div class="project-card">
+						<h3>Plan-it</h3>
+						<a href="https://plan-it-react-capstone.herokuapp.com/">
+							<!-- <img src="assets/plan-it--landing-page.JPG" height="350" width="625" alt="Plan-it landing page"> -->
+						</a>
 
-					<h4></h4>
-					<p class="project-description">
-						This app was built to streamline group travel planning after my own firsthand experience with less than organized
-						individuals. It enables uses to create unique rooms to coordinate the planning of a trip. Tasks can be assigned
-						to the various users that have joined the room and modifty the schedule for all to see as the tasks of
-						researching varioius potential activities actualize into
-						concrete plans.
-					</p>
-					<h4>Technologies</h4>
-					<div>
-						Front-End: React.js | Redux | HTML5 | CSS3 | JavaScript ES6
+						<h4></h4>
+						<p class="project-description">
+							This app was built to streamline group travel planning after my own firsthand experience with less than
+							organized
+							individuals. It enables uses to create unique rooms to coordinate the planning of a trip. Tasks can be assigned
+							to the various users that have joined the room and modifty the schedule for all to see as the tasks of
+							researching varioius potential activities actualize into
+							concrete plans.
+						</p>
+						<h4>Technologies</h4>
+						<div>
+							Front-End: React.js | Redux | HTML5 | CSS3 | JavaScript ES6
+						</div>
+						<div>
+							Back-End: Node.js | Express.js | Socket Testing: Mocha | Supertest | RESTful API Endpoints | MongoDB | Mongoose
+						</div>
+						<div>
+							Security: bcrypt.js, JWT
+						</div>
+						<div><a href="https://github.com/BlitzDampfwalze/plan-it-node">Github Repo</a></div>
 					</div>
-					<div>
-						Back-End: Node.js | Express.js | Socket Testing: Mocha | Supertest | RESTful API Endpoints | MongoDB | Mongoose
-					</div>
-					<div>
-						Security: bcrypt.js, JWT
-					</div>
-					<div><a href="https://github.com/BlitzDampfwalze/plan-it-node">Github Repo</a></div>
+
 				</div>
 
-			</div>
+				<div class="project-divs">
+					<div class="project-card">
+						<h3>Recipe Vault</h3>
+						<a href="https://recipe-vault-node-capstone.herokuapp.com/">
+							<!-- <img src="assets/Recipe-Vault-Home.JPG" height="350" width="625" alt="Recipe Vault landing page"> -->
+						</a>
+						<h4></h4>
+						<p class="project-description">
+							Despite numerous online recipes and sources, they never seem
+							to quite meet our expectations of our Moms' and Grandmas' recipes. The Recipe
+							Vault was an idea inspired in the aftermath of Hurricane Harvey.
+							Tradition and food was one of the last things on our minds at the time.
+							However, no holiday seems quite the same without those traditional family
+							dishes that have been passed down for generations. With the Recipe Vault, users are able to maintain
+							privacy as well as preserve their families' recipes.
+						</p>
+						<h4>Technologies</h4>
+						<div>
+							Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery
+						</div>
+						<div>
+							Back-End: Node.js | Express.js | Mocha | Supertest | RESTful API Endpoints | MongoDB | Mongoose
+						</div>
+						<div>
+							Security: bcrypt.js, JWT
+						</div>
+						<div><a href="https://github.com/BlitzDampfwalze/recipe-vault">Github Repo</a></div>
+					</div>
+				</div>
 
-			<div class="project-divs">
-				<div class="project-card">
-					<h3>Recipe Vault</h3>
-					<a href="https://recipe-vault-node-capstone.herokuapp.com/">
-						<!-- <img src="assets/Recipe-Vault-Home.JPG" height="350" width="625" alt="Recipe Vault landing page"> -->
-					</a>
-					<h4></h4>
-					<p class="project-description">
-						Despite numerous online recipes and sources, they never seem
-						to quite meet our expectations of our Moms' and Grandmas' recipes. The Recipe
-						Vault was an idea inspired in the aftermath of Hurricane Harvey.
-						Tradition and food was one of the last things on our minds at the time.
-						However, no holiday seems quite the same without those traditional family
-						dishes that have been passed down for generations. With the Recipe Vault, users are able to maintain
-						privacy as well as preserve their families' recipes.
-					</p>
-					<h4>Technologies</h4>
-					<div>
-						Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery
+				<div class="project-divs">
+					<div class="project-card">
+						<h3>Find Places & Things to Do! </h3>
+						<a href="https://blitzdampfwalze.github.io/API-Project-Google/">
+							<!-- <img src="assets/google-API-landing.jfif" height="350" width="625" alt="Find Places & Things to Do! landing page"> -->
+						</a>
+
+						<h4></h4>
+						<p class="project-description">
+							This app uses Google Places Library APIs and openweathermap.org API to fetch information about places,
+							activities, and other things to do near the user's entered location as well as the current forecast for the
+							area.
+						</p>
+						<h4>Technologies</h4>
+						<div>
+							Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery
+						</div>
+						<div><a href="https://github.com/BlitzDampfwalze/API-Project-Google">Github Repo</a></div>
 					</div>
-					<div>
-						Back-End: Node.js | Express.js | Mocha | Supertest | RESTful API Endpoints | MongoDB | Mongoose
-					</div>
-					<div>
-						Security: bcrypt.js, JWT
-					</div>
-					<div><a href="https://github.com/BlitzDampfwalze/recipe-vault">Github Repo</a></div>
 				</div>
 			</div>
-
-			<div class="project-divs">
-				<div class="project-card">
-					<h3>Find Places & Things to Do! </h3>
-					<a href="https://blitzdampfwalze.github.io/API-Project-Google/">
-						<!-- <img src="assets/google-API-landing.jfif" height="350" width="625" alt="Find Places & Things to Do! landing page"> -->
-					</a>
-
-					<h4></h4>
-					<p class="project-description">
-						This app uses Google Places Library APIs and openweathermap.org API to fetch information about places,
-						activities, and other things to do near the user's entered location as well as the current forecast for the
-						area.
-					</p>
-					<h4>Technologies</h4>
-					<div>
-						Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery
-					</div>
-					<div><a href="https://github.com/BlitzDampfwalze/API-Project-Google">Github Repo</a></div>
-				</div>
-			</div>
-
 		</section>
+
+		<section id="bio">
+				<h2>About Paul
+					<hr class="heading-underline" />
+				</h2>
+				<p>
+					Finding his corporate finance day to day job meaningless and mindless, the bordem began to drive Paul mad. He
+					decided to turn his hobby into a passion by immersing himself in the studies of web development. Nothing felt more
+					fulfilling than the constant challenge of solving new problems regularly. Furthermore, Paul would love to employ
+					his skills in the business world where he can make both a social and financial impact. On a less serious note,
+					Paul
+					also enjoys many other hobbies when he finds any free time in his schedule, such as playing the piano, playing the
+					steirische harmonika, participating in the local community, and engaging in strategic challenges from board games
+					to business negotations. Community involvement includes helping with Hurricane Harvey disaster relief and
+					other local non-profit organizations.
+				</p>
+	
+			</section>
 
 	</main>
 
