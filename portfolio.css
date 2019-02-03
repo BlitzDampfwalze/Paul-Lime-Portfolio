@@ -44,8 +44,16 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 }
 
+.nav-left a.rook {
+  padding: 0 15px 0;
+}
+
+.nav-left a.name {
+  padding: 0 15px 0;
+}
+
 .nav-item {
-  padding: 20px 15px;
+  padding: 25px 15px;
   /* height: 100%; */
 }
 
@@ -80,6 +88,12 @@ nav {
   align-items: center;
   font-family: 'Lora', serif;
   font-size: 1.6rem;
+}
+
+.nav-item:hover {
+  text-shadow: 1.75px 1.75px rgba(0, 0, 0, 0.589);
+  background-color:rgb(131, 134, 167);
+  transition: all 1500ms ease-out;
 }
 
 nav ul {
@@ -276,6 +290,7 @@ section#projects .project-cards {
   /* width: 625px; */
   justify-content: center;
   margin: 0 auto;
+  text-align: left;
 }
 
 .technologies-used {
@@ -303,7 +318,7 @@ section#bio {
 }
 
 section#bio p {
-  text-align: center;
+  text-align: left;
   /* color: rgba(207, 207, 230, 0.81); */
   /* color: #f4f4f4; */
   /* color: rgb(62,62,62); */
@@ -312,7 +327,9 @@ section#bio p {
   margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 1px;
-  font-weight: bold;
+  /* font-weight: bold; */
+  /* color: black; */
+
 }
 
 footer section {
