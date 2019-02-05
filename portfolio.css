@@ -372,24 +372,28 @@ footer h2 {
 
 } */
 
-/* ---------------Responsive Nav Menu CSS--------------- */
-.topnav .nav-menu-icon {
+/* ---------------Responsive NAV Menu CSS--------------- */
+.nav-right .nav-menu-icon {
   display: none;
 }
 
-.topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-}
-
-.topnav .nav-menu-icon {
+.nav-right .nav-menu-icon {
   fill: white;
   display: none;
+}
+
+@media screen and (max-width: 711px) {
+  .dropdown-content {
+    display: none;
+  }
 }
 /* ----------------------------------------------------- */
 
 @media screen and (max-width: 1400px) {
+  html {
+    font-size: 17px;
+  }
+
   .projects-wrapper {
     flex-direction: column;
     align-items: center;
@@ -428,36 +432,24 @@ footer h2 {
 
 @media screen and (max-width: 710px) {
 
-  .topnav li a {display: none;}
-  .topnav a.nav-menu-icon {
+  .nav-left {
+    padding: 12px 0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content {
+    z-index: 1;
+  }
+  
+
+  .nav-right a.nav-menu-icon {
     float: right;
     display: flex;  
     padding-right: 12px;
-    padding-top: 3px;
     font-size: 1.8rem;  
-  }
-
-  .topnav.responsive ul {
-    display: block;
-    margin-top: 45px;
-    
-  }
-
-  .topnav.responsive li {
-    padding: 10px;
-  }
-
-  .topnav.responsive .nav-menu-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 10px;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
   }
 
   html {
@@ -494,5 +486,5 @@ footer h2 {
 @media screen and (max-width: 400px) {
   .name {
     font-size: 1.33rem;
-   }
+  }
 }
