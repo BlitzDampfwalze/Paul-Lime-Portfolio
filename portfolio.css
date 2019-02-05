@@ -507,6 +507,10 @@ footer h2 {
     font-size: 1.33rem;
   }
 
+  #fwd-slash {
+    font-size: 1.0rem;
+  }
+
   .heading-wrapper h1 {
     font-size: 2.5rem;
   }
