@@ -387,6 +387,14 @@ footer h2 {
     display: none;
   }
 }
+
+#menu-icon-text {
+  display: flex;
+  align-self: center;
+  margin-left: 5px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
 /* ----------------------------------------------------- */
 
 @media screen and (max-width: 1400px) {
