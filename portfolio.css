@@ -457,6 +457,10 @@ footer h2 {
   .dropdown-content {
     z-index: 1;
   }
+
+  .dropdown:hover .nav-menu-icon {
+    display: none;
+  }
   
 
   .nav-right a.nav-menu-icon {
