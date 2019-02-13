@@ -19,7 +19,8 @@ main {
 }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   color: rgb(62,62,62);
 }
 
@@ -58,7 +59,8 @@ header {
 }
 
 nav {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
   letter-spacing: 2px;
   display: flex;
   align-items: center;
@@ -71,6 +73,7 @@ nav {
 
 .nav-right {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .name {
@@ -87,6 +90,7 @@ nav {
   display: flex;
   align-items: center;
   font-family: 'Lora', serif;
+  font-weight: bold;
   font-size: 1.6rem;
 }
 
@@ -324,10 +328,10 @@ section#bio p {
   /* color: rgb(62,62,62); */
   font-size: 1.1rem;
   max-width: 85%;
-  margin: 0 auto;
-  line-height: 1.5;
+  margin: 20px auto;
+  line-height: 1.7;
   letter-spacing: 1px;
-  /* font-weight: bold; */
+  font-weight: bold;
   /* color: black; */
 
 }
