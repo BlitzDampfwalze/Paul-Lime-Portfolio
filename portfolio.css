@@ -364,18 +364,6 @@ footer h2 {
   padding: 35px 0 50px;
 }
 
-/* @media screen and (max-width: 901px) {
-
-  .project-divs {
-    min-width: 1px;
-  }
-
-  section#bio p {
-    max-width: 900px;
-  }
-
-} */
-
 /* ---------------Responsive NAV Menu CSS--------------- */
 .nav-right .nav-menu-icon {
   display: none;
@@ -509,6 +497,16 @@ footer h2 {
 
   .css-icon {
   display: none;
+  }
+
+  .skill-list {
+    margin: 5px;
+  }
+  
+  .skill-description-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 }
