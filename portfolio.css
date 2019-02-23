@@ -301,15 +301,20 @@ section#projects .project-cards {
   line-height: 1.35rem;
 }
 
-.project-divs button {
+.project-button-links-wrapper {
+  display: flex;
+  justify-content: center;  
+}
+
+.project-divs .button {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
   padding: 10px;
-  margin: 0 10px;
+  margin: 0 15px;
   border: #162c57;
   border-radius: 3px;
   color:white;
   background-color: #162c57;
-  
+  font-size: 14px;
 }
 
 #bio {
@@ -481,6 +486,11 @@ footer a {
   section#projects div, section#projects h3 {
     margin: 15px 0;
   }
+
+  section#projects div .project-button-links-wrapper .button {
+    margin: 0 15px;
+  }
+
   .project-divs {
     max-width: 100%;
   }
