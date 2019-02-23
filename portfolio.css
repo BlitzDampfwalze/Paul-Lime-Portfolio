@@ -350,14 +350,15 @@ footer {
 }
 
 footer section a {
-  padding: 15px 40px;
-  /* width issue  */
-  /* padding: 15px 105px 40px; */ 
-  
+  padding: 15px 40px; 
 }
 
 footer h2 {
   margin-bottom: 35px;
+}
+
+footer a {
+  font-size: 1.5rem;
 }
 
 #copyright {
