@@ -14,19 +14,37 @@ font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Lora', serif;
 ----------------------------------------- */
 
-main {
-  margin-top: 100px;
-}
-
 body {
   /* font-family: 'IBM Plex Sans', sans-serif; */
   font-family: 'Open Sans', sans-serif;
-  color: rgb(62,62,62);
+  /* color: rgb(62,62,62); */
 }
 
 a {
 text-decoration: none;
 color: white; 
+}
+
+.background-wrapper {
+  background: url(./assets/overcoming-mountains.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.4), 0 12px 40px 0 rgba(0,0,0,.4)
+}
+
+.background-image-overlay {
+  background-color: rgba(145, 147, 165, 0.6);
+  /* height: 100vh;
+  width: 100%; */
+}
+
+.intro-wrapper {
+  padding: 200px 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #intro p a {
@@ -59,7 +77,7 @@ header {
 }
 
 nav {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', serif;
   /* font-family: 'IBM Plex Sans', sans-serif; */
   letter-spacing: 2px;
   display: flex;
@@ -155,20 +173,21 @@ h4 {
 }
 
 #intro {
-  max-width: 80%;
+  max-width: 990px;
   margin: 25px auto 70px;
 }
 
 #intro h2 {
-  font-size: 2.5rem;
-  line-height: 65px;
+  font-size: 1.9rem;
+  line-height: 3rem;
   margin-bottom: 20px;
 }
 
 #intro p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   line-height: 1.5;
-  max-width: 70%;
+  max-width: 85%;
   margin: 15px auto 0px;
   text-align: center;
 }
@@ -370,6 +389,10 @@ footer a {
   padding: 35px 0 50px;
 }
 
+#skills-scroll {
+  padding-top: 50px;
+}
+
 /* ---------------Responsive NAV Menu CSS--------------- */
 .nav-right .nav-menu-icon {
   display: none;
@@ -426,8 +449,12 @@ footer a {
     font-size: 14px;   
   }
 
-  main {
-    margin-top: 75px;
+ .background-wrapper { 
+   height: 100%;
+ }
+
+  .intro-wrapper {
+    padding: 125px 0 75px;
   }
 
   .rook {
