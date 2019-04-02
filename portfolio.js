@@ -17,22 +17,8 @@ $(document).ready(
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 800
-        // , function () {
-
-        //   // Add hash (#) to URL when done scrolling (default click behavior)
-        //   window.location.hash = hash;
-        // }
         );
-      } // End if
+      } 
     });
   }
 );
-
-// function navbarMenu() {
-//   var x = document.getElementById("navbar");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
