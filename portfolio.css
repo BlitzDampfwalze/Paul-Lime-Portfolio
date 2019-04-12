@@ -1,4 +1,4 @@
-*, *::before, *::after {
+body *, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -15,9 +15,7 @@ font-family: 'Lora', serif;
 ----------------------------------------- */
 
 body {
-  /* font-family: 'IBM Plex Sans', sans-serif; */
   font-family: 'Open Sans', sans-serif;
-  /* color: rgb(62,62,62); */
 }
 
 a {
@@ -31,14 +29,10 @@ color: white;
   background-position: center;
   min-height: calc(100vh);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,.4), 0 12px 40px 0 rgba(0,0,0,.4);
-  /* height: 100vh; */
-  /* width: 100%; */
 }
 
 .background-image-overlay {
   background-color: rgba(145, 147, 165, 0.6);
-  /* height: 100vh;
-  width: 100%; */
 }
 
 .intro-wrapper {
@@ -65,34 +59,26 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 }
 
-.nav-left a.rook {
-  padding: 0 15px 0;
-}
-
 .nav-left a.name {
-  padding: 0 15px 0;
+  padding: 0 25px 0;
 }
 
 .nav-item {
   padding: 25px 15px;
-  /* height: 100%; */
 }
 
 nav {
   font-family: 'Lora', serif;
-  /* font-family: 'IBM Plex Sans', sans-serif; */
   letter-spacing: 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
-  /* background-color: #162749; */
   background: linear-gradient(to bottom right, #12213f, #576786);
-  /* #1f3f7e */
 }
 
 .nav-right {
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   font-weight: bold;
 }
 
@@ -123,10 +109,7 @@ nav {
 nav ul {
   display: flex;
 }
-.rook {
-  fill: white;
-  width: 30px;
-}
+
 .angle-bracket {
   font-size: 2rem;
 }
@@ -137,8 +120,6 @@ hr {
 
 h1 {
   font-family: 'Lora', serif;
-  /* color: rgba(207, 207, 230, 0.85); */
-  /* color:	rgb(62,62,62); */
   font-size: 3.5rem;
   text-align: center;
   letter-spacing: 1.25px;
@@ -156,17 +137,26 @@ h1 {
 h2 {
   letter-spacing: 1.5px;
   font-family: 'Lora', serif;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
-#projects h2 {
+#skills h2 {
+  margin-bottom: 60px;
+}
+
+#skills h3 {
   font-size: 2rem;
+  font-style: italic;
+}
+
+.skill-sub-heading {
+  width: 30%;
 }
 
 h3 {
   font-family: 'Lora', serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -195,13 +185,17 @@ h4 {
 }
 
 #skills {
-  border: 2px solid #000;
+  /* border: 2px solid #000;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-  padding: 15px;
-  margin: 200px auto 200px;
-  max-width: 72%;
-  text-align: center;
+  padding: 15px; */
+  margin: 40px auto 200px;
+  max-width: 68%;
+  font-size: 1.2rem;
+}
+
+.skill-section-wrapper {
+  display: flex;
 }
 
 .languages-heading {
@@ -210,18 +204,9 @@ h4 {
   font-size: 1.5rem;
 }
 
-.skill-description-wrapper {
-  display: flex;
-}
-
-.skill-list {
-  flex-basis: 33%;
-}
-
 
 .language-list {
   font-size: 1.18rem;
-  display: flex;
   max-width: 50%;
   margin: 0 auto;
 }
@@ -237,32 +222,27 @@ h4 {
 
 
 section#skills div {
-  /* color:rgba(207, 207, 230, 0.9); */
   color: black;
-  /* max-width: 900px; */
   margin: 0 auto;
   line-height: 1.5;
   font-weight: bold;
   letter-spacing: 0.3px;
 }
 
-.icon-wrapper {
+
+.icon-wrapper, .list-wrapper{
   display: flex;
-  /* flex-flow: row nowrap; */
-  flex-direction: row;
-  height: 190px;
-  padding: 20px 0px 10px;
-}
-.icon-skill {
-  flex-basis: 16.67%;
-}
-.skill-description-wrapper {
-  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.skill-description {
-  flex-basis: 33%;
+.list-wrapper {
+  padding-right: 10px;
 }
+
+
+
 
 .projects-wrapper {
   display: flex;
@@ -532,23 +512,8 @@ footer a {
   .language {
     padding: 10px 0;
   }
-
-
-  .css-icon {
-  display: none;
-  }
-
-  .skill-list {
-    margin: 5px;
-  }
-  
-  .skill-description-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
 }
+
 
 @media screen and (max-width: 450px) {
 

@@ -1,63 +1,105 @@
-.redux, .react, .js, .node, .css-icon, .html-icon  {
-  width: 125px;
+.icon-skill {
+  width: 150px;
 }
 
-.css-icon {
-  padding: 10px 0;
+h3:hover + li {
+  transform: scale(1.3);
+  transition: all 1s;
+  transform-origin: 10% -10%;
+  font-size: 1.2rem;
 }
 
-.react {
+.icon-skill:hover {
+  transition: all 1s;
+  transform-origin: 50% -50%;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.react-icon {
   fill:#00D8FF;
 }
 
-.node-icon {
-  margin-right: 8px;
-}
-
 .html-icon {
-
   fill: #e54d26;
 }
 
-.icon-wrapper {
-  justify-content: center;
-  padding: 25px 0;
+.icon-skill {
+  flex-basis: 28%;
 }
+
+.scroll-arrow {
+  font-size: 62px;
+  color: #313f5e;
+  position: absolute;
+  bottom: 6%;
+  left: 47.6%;
+
+  background: rgba(255, 255, 255, 0.918);
+  border-radius: 50%;
+  border: 5.2px solid #313f5e;
+}
+
+.arrow-button-wrapper {
+  text-align: center;
+}
+
+.scroll-arrow-projects {
+  font-size: 62px;
+  color: #313f5e;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.99);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1.3em;
+  font-size: 1.2rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.email-icon:hover ~ .tooltiptext {
+  visibility: visible;
+  transform: scale(1.3);
+  transition: all 1.5s;
+  transform-origin: 100% 500%;
+  font-size: 1.2rem;
+
+}
+
 
 
 @media screen and (max-width: 1150px) {
-  .css-icon {
-    padding: 15px 0;
-  }
+.icon-skill {
+  width: 120px;
 }
 
-@media screen and (max-width: 1040px) {
-  .css-icon {
-    padding: 20px 0;
-  }
 }
 
-@media screen and (max-width: 940px) {
-  .css-icon {
-    padding: 25px 0;
+@media screen and (max-width: 710px) {
+  .icon-skill {
+    width: 80px;
   }
-}
-
-@media screen and (max-width: 860px) {
-  .css-icon {
-    padding: 30px 0;
+  
   }
-}
 
-@media screen and (max-width: 730px) {
-  .css-icon {
-    padding: 35px 0;
+  @media screen and (max-width: 600px) {
+    .icon-skill {
+      width: 70px;
+    }
   }
-}
 
-
-@media screen and (max-width: 650px) {
-  .css-icon {
-    padding: 40px 0;
+  @media screen and (max-width: 450px) {
+    .icon-skill {
+      width: 60px;
+    }
   }
-}
