@@ -29,6 +29,7 @@ h3:hover + li {
 }
 
 .scroll-arrow-wrapper {
+  animation: bounce 2s infinite;
   text-align: center;
   bottom: 6%;
   left: 0;
@@ -81,8 +82,6 @@ h3:hover + li {
 
 }
 
-
-
 @media screen and (max-width: 1150px) {
 .icon-skill {
   width: 120px;
@@ -108,3 +107,98 @@ h3:hover + li {
       width: 60px;
     }
   }
+
+/* ----------------------------------------------------------- */
+/* ------------------------Animations------------------------- */
+/* ----------------------------------------------------------- */
+.bounce {
+	-webkit-animation: bounce 3s;
+	        animation: bounce 3s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-4px);
+		        transform: translateY(-4px);
+	}
+	60% {
+		-webkit-transform: translateY(-2px);
+		        transform: translateY(-2px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-4px);
+		        transform: translateY(-4px);
+	}
+	60% {
+		-webkit-transform: translateY(-2px);
+		        transform: translateY(-2px);
+	}
+}
+
+.bounce2 {
+	-webkit-animation: bounce 2s;
+	        animation: bounce 2s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-16px);
+		        transform: translateY(-16px);
+	}
+	60% {
+		-webkit-transform: translateY(-8px);
+		        transform: translateY(-8px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-16px);
+		        transform: translateY(-16px);
+	}
+	60% {
+		-webkit-transform: translateY(-8px);
+		        transform: translateY(-8px);
+	}
+}
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
