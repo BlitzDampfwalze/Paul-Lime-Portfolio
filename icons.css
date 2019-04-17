@@ -49,6 +49,13 @@ h3:hover + li {
   text-align: center;
 }
 
+.scroll-arrow-bio {
+  font-size: 62px;
+  color: #313f5e;
+  margin: 0 auto;
+	padding-top: 15px;
+}
+
 .scroll-arrow-projects {
   font-size: 62px;
   color: #313f5e;

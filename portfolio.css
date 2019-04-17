@@ -115,7 +115,7 @@ nav ul {
 }
 
 hr {
-  margin: 6px 0 7px;
+  margin: 6px auto 7px;
 }
 
 h1 {
@@ -327,9 +327,34 @@ section#projects .project-cards {
   width: 100%;
 }
 
+
 section#bio {
   flex-basis:   50%;
-  margin: 60px auto 60px;
+  margin: 128px auto 0;
+  height: 100vh;
+}
+
+section#bio h3 {
+  text-align: center;
+  max-width: 60%;
+  margin: 50px auto 20px;
+}
+
+section#bio h4 {
+  text-align: left;
+  max-width: 60%;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+section#bio .quote {
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+
+.line-separator {
+  margin: 0 auto;
+  max-width: 60%;
 }
 
 section#bio p {
@@ -338,7 +363,7 @@ section#bio p {
   /* color: #f4f4f4; */
   /* color: rgb(62,62,62); */
   font-size: 1.1rem;
-  max-width: 85%;
+  max-width: 60%;
   margin: 20px auto;
   line-height: 1.7;
   letter-spacing: 1px;
@@ -428,6 +453,13 @@ footer a {
   html {
     font-size: 16px;   
   }
+
+  section#bio {
+    flex-basis:   50%;
+    margin: 228px auto;
+    height: 100%;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
