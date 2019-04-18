@@ -330,7 +330,7 @@ section#projects .project-cards {
 
 section#bio {
   flex-basis:   50%;
-  margin: 228px auto;
+  margin: 128px auto 228px;
   height: 100vh;
 }
 
@@ -460,7 +460,7 @@ footer a {
 
   section#bio {
     flex-basis:   50%;
-    margin: 228px auto;
+    margin: 128px auto 228px;
     height: 100%;
   }
 
