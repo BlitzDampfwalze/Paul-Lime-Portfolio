@@ -337,7 +337,7 @@ section#bio {
 section#bio h3 {
   text-align: center;
   max-width: 60%;
-  margin: 50px auto 20px;
+  margin: 50px auto;
 }
 
 section#bio h4 {
@@ -489,6 +489,11 @@ footer a {
   .project-divs {
     max-width: 80%;
   }
+
+  section#bio p, section#bio h4, section#bio h3 {
+    max-width: 75%;
+  }
+
 }
 
 @media screen and (max-width: 710px) {
@@ -573,5 +578,9 @@ footer a {
     font-size: 1.7rem;
     margin: 12px auto 12px;
     line-height: 3rem;
+  }
+
+  section#bio .quote {
+    padding-left: 0;
   }
 }
