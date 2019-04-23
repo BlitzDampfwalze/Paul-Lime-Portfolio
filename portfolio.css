@@ -331,7 +331,6 @@ section#projects .project-cards {
 section#bio {
   flex-basis:   50%;
   margin: 128px auto 228px;
-  height: 100vh;
 }
 
 section#bio h3 {
